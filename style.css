@@ -10,6 +10,9 @@ body {
     background-color: rgb(255, 254, 254);
     margin: 0;
 }
+h1 {
+    font-weight: bold;
+}
 span {
     color: #246837;
 }
