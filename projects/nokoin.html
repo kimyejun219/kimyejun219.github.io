@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/nokoin.css" rel="stylesheet">
+    <title>nokoin</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <a href="../index.html#projects"><li><p>back to projects</p></li></a>
+            <a href="../index.html"><li><h2 id="name">yejun kim</h2></li></a>
+            <a href="../projects/visual.html"><li><p>explore some art</p></li></a>
+        </ul>
+    </header>
+    <div id="title">
+        <div><h1>nokoin</h1></div>
+    </div>
+    <div id="parent">
+        <div id="award" class="content">
+            <h2>🏆 HackGT8 Best in App/Web Development & [NCR] Best Use of Cryptocurrency Awards 💰🔑</h2>
+        </div>
+        <div class="content">
+            <h3>team members</h3>
+            <p>heejoo jin, aiden lee, hyuntaek lim, and yejun kim</p>
+        </div>
+        <div id="problem" class="content">
+            <h3>problem/goal</h3>
+            <p>The goal of hackgt8 was to create and solve any problem that we felt we needed to address. We chose to research and solve the crisis regarding the waste of coins.</p>
+        </div>
+        <div id="research" class="content">
+            <h3>research</h3>
+            <p>Coin making in general is pretty expensive. it costs 2 cents to make 1 penny, and 7 cents to make a nickel. While it takes loads of money to create coins, we, according to a news article on cbs news, throw away $62 million in coins each year by simply tossing them in the trash because of its lack of use. Additionally, since the rise of COVID-19, markets have encouraged more use of digitalized payments over cash and coin payments. With all these factors in mind, the US Mint has announced the cease of penny production starting 2023. It is clear that no one really wants to use coins anymore, so how can we turn this into an opportunity?</p>
+        </div>
+        <div id="ideation" class="content">
+            <h3>our approach</h3>
+            <img src="../images/nokoin/approach.png" alt="approach">
+            <p>With the traditional approach, the user first pays with cash at a grocery store. The POS system then returns coins as change. As a result, the user’s pocket becomes heavy with a load of coins. with nokoin’s approach, instead of the POS system returning coins automatically, it will give an option to return the change as cryptocurrency. The user can provide their cryptocurrency identification and the change will be converted to crypto and deposited into their account. <br></p>
+            <p><b><br> demo video</b></p>
+            <div id="video"><iframe src="https://www.youtube.com/embed/y1L_cKl3bsM" allowfullscreen></iframe></div>
+        </div>
+        <div id="wireframe" class="content">
+            <h3>how was it made?</h3>
+            <img src="../images/nokoin/system_architecture.png" alt="sa">
+            <ul>
+                <li>The POS shows the customer how much he or she needs to pay and payment options. After inserting cash into POS, the user will be provided with two choices: receiving coin and bill change and Ethereum. The functionalities for buttons were built using JavaScript, HTML, and CSS, and the User Interface for the POS was built using Adobe Creative Suite.</li>
+                <li>If the customer chooses the Ethereum option, the POS will try to scan the customer’s QR code. In the POS system, our application will be represented in Heroku and provide a scanner where the customers can pull up their QR codes. The Dynamsoft API will decode the QR code so that the system can verify whether the customer has a valid Metamask account, a digital currency wallet.</li>
+                <li>When the QR code validation is over, the Ethereum API (Web3) functions will work on transferring the purchased cryptocurrency into the customer’s digital wallet. Web3 will fetch the unique address of the customer from the Metamask and then transfer the digital currency. We fulfilled these requirements by modifying the Web3 API using python.</li>
+            </ul>
+        </div>
+        <div id="ui" class="content">
+            <h3>POS screen UI</h3>
+            <img src="../images/nokoin/1_choose payment.png" alt="1">
+            <img src="../images/nokoin/2_insert cash.png" alt="2">
+            <img src="../images/nokoin/3_how would you like change.png" alt="3">
+            <img src="../images/nokoin/4_qr scan.png" alt="4">
+            <img src="../images/nokoin/4a_wrong qr code.png" alt="4a">
+            <img src="../images/nokoin/5_processing.png" alt="5">
+            <img src="../images/nokoin/6_thank you.png" alt="6">
+        </div>
+        <div id="next" class="content">
+            <h3>what's next?</h3>
+            <p>There are three areas of improvement in our product. </p>
+            <ul>
+                <li><b>How could we manage gas fee?</b> When transferring and depositing cryptocurrency, a certain percentage of the amount is taken as the gas fee. Because of time constraint, we did not have enough time to figure out a way to get about the occurrence of the gas fee.</li>
+                <li><b>How could we use not only crypto
+                    but also other connecting to different banking accounts?</b> To consider a variety of nokoin customers, we could not only transfer to cryptocurrency accounts, but also bank accounts or money exchanging platforms such as Venmo or PayPal.</li>
+                <li><b>How could we implement security?</b> We wanted the customers to use our product safely, and this goal was one of the reasons why we chose to use QR codes for authentication. However, we recognize some unexpected issues and hacking attacks might happen. Further implementing cybersecurity options could make this solution more stable.
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

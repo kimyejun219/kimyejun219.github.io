@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/mimo.css" rel="stylesheet">
+    <title>mimo</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <a href="../index.html#projects"><li><p>back to projects</p></li></a>
+            <a href="../index.html"><li><h2 id="name">yejun kim</h2></li></a>
+            <a href="../projects/cfm.html"><li><p>next project</p></li></a>
+        </ul>
+    </header>
+    <div id="title">
+        <div><h1>mimo</h1></div>
+    </div>
+    <div id="parent">
+        <div class="content">
+            <h3>team members</h3>
+            <p>matthew gunther, marie desrochers, and yejun kim</p>
+        </div>
+        <div id="problem" class="content">
+            <h3>problem/goal</h3>
+            <p>previously, i made milo, a clock that conveys information through light. milo is another iteration of milo, so if you haven’t already, <a href="../projects/milo.html"><b>check out milo!</b></a> for those who have already, for recap, possible further iterations included adding a physical property to light, a component of interacting and responding with light, and a system to provide more information.</p>
+        </div>
+        <div id="research" class="content">
+            <h3>research</h3>
+            <p>in this project, we were inspired by Amazon’s Alexa. It’s nice that Alexa tells me what the weather is, and what time it is in Seoul, Korea, but sometimes it feels a little invasive and impersonal. The suspicion over the invasiveness of a digital home assistant and the question over exactly how much of our conversations they listen to is still a hot debate over the several years. We wanted to ask the question, how can we take this undesirable property of a digital home assistant and replace it with a more nuanced and expressive form of communication information through light?</p>
+        </div>
+        <div id="ideation" class="content">
+            <h3>the idea</h3>
+            <div id="video"><iframe src="https://www.youtube.com/embed/Awo85bY0yEA" allowfullscreen></iframe></div>
+            <p>mimo is your companion. milo’s state changes on contextual factors such as time, weather, and the presence of the user. the change in time is reflected by the shape of the light. this feature gives light a “physical property”, allowing the user to feel like this light is real and alive. weather is shown through the color of the light. this property reflects a sort of mood and feeling of the light. lastly, the user and the light interacts buy just the users presence, brightening as the user gets close, to elicit a feeling of excitement a companion might feel when they are greeted.</p>
+        </div>
+        <div id="wireframe" class="content">
+            <h3>how was it made?</h3>
+            <div class="container">
+                <div>
+                    <img src="../images/mimo/light_on.jpg" alt="light" id="light">
+                </div>
+                <p> <b>lighting:</b> LED neopixel ring was used along with a weather API to get specific weather data and reflect it as a color.
+                </p>
+            </div>
+            <div class="container">
+                <div>
+                    <img src="../images/mimo/cover.jpg" alt="light_img">
+                    <img src="../images/mimo/light.gif" alt="light_gif">
+                </div>
+                <p> <b>recognition:</b> 3 infrared sensors in horizontal placement were used to get proximity data. according to which infrared sensor(left, right, or center) was within the threshold first, the animations of the light were differently programmed.
+                </p>
+            </div>
+            <div class="container">
+                <p> <b>movement:</b> perhaps the most difficult part of this project was to iterate a movement mechanism. because we wanted to create a natural movement, we had to test out multiple mechanisms and materials.
+                </p>
+                <div>
+                    <img src="../images/mimo/cam.gif" alt="light_img" id="cam">
+                </div>
+                <p>first mechanism explored was the cam mechanism. two rods, each attached to an oval, were connected to a dc motor to create reciprocating linear motion. one complication that we faced was that it was difficult to find a location to place the LEDs and sensors without the mechanism being bothered. When we managed to place the LED’s, shadows were casted, which were not pleasing to the eye. Another difficulty we faced was that the motor itself was not strong enough to carry any more weight. Our plan was to attach rounded plastic and cover the whole product with a spandex type cloth, but the motor stopped moving as soon as the cloth was draped over the product.</p>
+                <ul>
+                    <li><img src="../images/mimo/origami_1.jpeg" alt="origami_1"></li>
+                    <li><img src="../images/mimo/origami_2.jpeg" alt="origami_2"></li>
+                    <li><img src="../images/mimo/paper.gif" alt="paper"></li>
+                    <li><img src="../images/mimo/servo.gif" alt="servo"></li>
+                </ul>
+                <p>the next mechanism, and the one that we chose, utilized origami patterns. dynamic origami patterns enabled a more natural shape shifting and we were able to make a sphere out of origami. because paper was not strong enough, we used mylar sheets and laser cutter to form precise and accurate perforation. we tied fishing wire to the top and rolled it onto a spool attached to a servo motor to create a flattening movement. the mylar sheets had enough latency that when the wire was unrolled, the mylar sheets returned to its original sphere shape.</p>
+            </div>
+        </div>
+        <!-- <div id="poster"><img src="../images/milo/yejunkim_milo.png" alt="poster"></div> -->
+        <div id="next" class="content">
+            <h3>what's next?</h3>
+            <p> some other possibilities or iterations include, considering a more sophisticated kinetic modalities and programming to make the light animations and servo movements more compatible. <br>
+                - using silicone or other flexible plastic material could enhance the smooth feeling of a light and also successfully create desired movements.  <br>
+                - the arduino was programmed with delays, so when the light animation is happening, the servo stops moving. to modify this issue, the use of millis, instead of delays, could be implemented to keep all components of the light moving at all times. <br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
