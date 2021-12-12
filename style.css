@@ -43,13 +43,13 @@ a {
 #main img {
     width: 40vw;
     border-radius: 15px;
-    box-shadow: 1vw 1vw rgb(255, 255, 255);
+    box-shadow: 1vw 1vw rgb(233, 233, 233);
 }
 /* #main .title {
     padding-top: 42vh;
 } */
 #main h1 {
-    color: rgb(206, 206, 206);
+    color: #b1d8bc;
     /* color: #333742; */
     margin-left: 15px;
     margin-right: 15px;
@@ -59,11 +59,11 @@ a {
     /* color: #246837; */
 }
 #resume {
-    color: rgb(206, 206, 206);
+    color: #4c9160;
     /* color: #979797;; */
 }
 #catch {
-    color: rgb(206, 206, 206);
+    color: rgb(224, 224, 224);
     padding-top: 2vw;
     /* color: #333742; */
     font-size: large;
@@ -149,7 +149,7 @@ a {
     padding-top: 7vh;
 }
 #contacts div h2 {
-    color: rgb(206, 206, 206);
+    color: #b1d8bc;
     /* color: #333742; */
     margin-left: 40px;
     margin-right: 40px;
@@ -160,17 +160,15 @@ a {
 }
 #contacts p {
     padding: 0 20vw;
-    color: rgb(206, 206, 206);
+    color: rgb(224, 224, 224);
 }
 #contacts h3 {
-    color: rgb(255, 254, 254);
+    margin: 0.5vw 0;
+    color: #b1d8bc;
 }
-#email p {
+#contacts #email p {
     margin-top: 10vh;
-    color: rgb(206, 206, 206);
-}
-#email {
-    color: #979797
+    color: #4c9160;
 }
 ul {
     padding: 0;
