@@ -1,175 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-body {
-    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
-    font-family: 'Poppins', sans-serif;
-    color: #333742;
-    text-align: center;
-    background-color: rgb(255, 254, 254);
+body{
+    background-color:#F9FAFC;
+    font:16px/1.6em 'NanumSquareRound', sans-serif;
+    color:#212528;
     margin: 0;
 }
-/* h1 {
-    font-weight: 800;
-} */
-span {
-    color: #246837;
+h1 {
+    font-weight: 400;
+    font-size: 25px;
 }
-a {
-    text-decoration: none;
+.num {
+    font-size: 60px;
 }
-/* header {
-    background-color: #246837;
-}
-#menu {
-    list-style: none;
-    display: inline-block;
-} */
-
-#main {
-    height: 85vh;
-    background-color: #246837;
-    vertical-align: middle;
-    padding-top: 17vh;
-}
-#main li {
-    list-style: none;
-    display: inline-block;
-    justify-content: center;
-    vertical-align: middle;
-    padding: 5vw 5vw;
-}
-#main img {
-    width: 40vw;
-    border-radius: 15px;
-    box-shadow: 1vw 1vw rgb(233, 233, 233);
-}
-/* #main .title {
-    padding-top: 42vh;
-} */
-#main h1 {
-    color: #b1d8bc;
-    /* color: #333742; */
-    margin-left: 15px;
-    margin-right: 15px;
-}
-#main span {
-    color: rgb(255, 254, 254);
-    /* color: #246837; */
-}
-#resume {
-    color: #4c9160;
-    /* color: #979797;; */
-}
-#catch {
-    color: rgb(224, 224, 224);
-    padding-top: 2vw;
-    /* color: #333742; */
-    font-size: large;
-}
-#main h3 {
-    margin-top: 35vh;
-}
-
-#projects #proj_content {
-    padding: 10vh 10vw;
-}
-#projects #proj_content #title{
-    padding-bottom: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-#projects #proj_content a {
-    text-decoration: none;
-    color: #333742;
-}
-#projects #proj_content .stuff{  
-    margin-top: 50px;
-}
-#projects #proj_content .stuff .item{
-    list-style: none;
-    display: inline-block;
-    justify-content: center;
-    margin: 15px 50px;
-    height: 100px;
-    width: 200px;
-    border-radius: 10px;
-}
-#projects .item#milo {
-    background-image: url(images/milo/cover.jpeg);
+.cfm {
+    background-image: url(cfm.png);
     background-size: cover;
-}
-#projects .item#mimo {
-    background-image: url(images/mimo/cover.jpg);
-    background-size: cover;
-}
-#projects .item#nokoin {
-    background-image: url(images/nokoin/cover.png);
-    background-size: cover;
-}
-#projects .item#cfm {
-    background-image: url(images/cfm/cover.jpg);
-    background-size: cover;
-}
-#projects .item#library {
-    background-image: url(images/library/cover.png);
-    background-size: cover;
-}
-#projects .item#visual {
-    background-image: url(images/visual/cover.png);
-    background-size: cover;
-}
-#projects .item#poster {
-    background-image: url(images/poster/cover.png);
-    background-size: cover;
-}
-#projects .item h3 {
-    color: black;
-    visibility: hidden;
-}
-
-#projects .item:hover {
-    opacity: 0.8;
-}
-
-#projects .item:hover h3{
-    visibility: visible;
-}
-#projects .item {
-    padding-top: 60px;
-    color: white;
-}
-#contacts {
-    height: 95vh;
-    padding-top: 5vh;
-    background-color: #246837;
-}
-#contacts div {
-    padding-top: 7vh;
-}
-#contacts div h2 {
-    color: #b1d8bc;
-    /* color: #333742; */
-    margin-left: 40px;
-    margin-right: 40px;
-}
-#contacts div span {
-    color: rgb(255, 254, 254);
-    /* color: #246837; */
-}
-#contacts p {
-    padding: 0 20vw;
-    color: rgb(224, 224, 224);
-}
-#contacts h3 {
-    margin: 0.5vw 0;
-    color: #b1d8bc;
-}
-#contacts #email p {
-    margin-top: 10vh;
-    color: #4c9160;
-}
-ul {
-    padding: 0;
+    background-position: right;
+    background-repeat: no-repeat;
 }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="nanumsquareround.css" rel="stylesheet">
+    <link href="mimo.css" rel="stylesheet">
+    <title>Mimo</title>
+</head>
+<body>
+    <div class="w-100 top-color min-vw-100">
+        <header class="d-flex flex-wrap justify-content-center py-3 pb-4 container-sm">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <span class="fs-4">Yejun Kim</span>
+          </a>
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="../index.html" class="nav-link px-2 link-dark">Projects</a></li>
+            <li><a href="../about/about.html" class="nav-link px-2 link-dark">About Me</a></li>
+          </ul>
+        </header>
+    </div>
+    <div class="w-100 top-color pb-5 min-vw-100">
+        <div class="d-flex flex-wrap justify-content-center py-3 container-sm" >
+            <div class="col-md-5 themed-grid-col d-flex align-items-center"><h2>Mimo</h2></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 themed-grid-col"><img src="../about/profile.jpg" alt="me" class="w-100"></div>
+        </div>
+    </div>
+    <div class="container m-auto">
+        <!-- TIMELINE & ROLE -->
+        <div class="row py-5 border-bottom m-auto">
+            <div class="col-md-6">
+                <h5>Timeline</h5>
+                <p>September 2022 - December 2022</p>
+            </div>
+            <div class="col-md-6">
+                <h5>My Role</h5>
+                <p>Individual Project</p>
+            </div>
+        </div>
+        <!-- FOREWORD -->
+        <div class="row py-5 border-bottom m-auto">
+            <div class="col-md-12">
+                <h5>Foreword</h5>
+                <p>This is a passion project exploring interactive prototyping ideas. <br> 
+                    This project is split into two iterations, 
+                    each exploring two different uses of sound and how they can be 
+                    re-defined with components of light.</p>
+            </div>
+        </div>
+        <!-- THE QUESTION -->
+        <div class="row py-5 border-bottom m-auto">
+            <div class="col-md-12">
+                <h5>The Question</h5>
+                <h3><b>Re-defining everyday objects</b></h3>
+                <p>Sound, in the form of an alert, is definitely not a pleasing tone to hear. 
+                    I wanted to explore an opportunity here: how can I replace an unattractive 
+                    component of sound with something else to alert and send information?</p>
+            </div>
+        </div>
+        <!-- MILO -->
+        <div class="row py-5 border-bottom m-auto">
+            <div class="col-md-12">
+                <h3><b>milo: re-defining an alarm clock</b></h3>
+                <p><b>Loud sounds in alarms are unpleasant:</b>
+                    How can we replace something loud and unpleasant with soft and nuanced?
+                </p>
+                <p><b>Light is often therapeutic and lifts up the mood:</b>
+                    Can light replace sound in communicating with the user?
+                </p>
+                <p>milo is an alternative interpretation of an alarm clock. 
+                    At first glance, milo looks and acts like a desk lamp. 
+                    However, once you press on milo, it activates an alarm which alerts you 
+                    with a change of hue in light. 
+                </p>
+            </div>
+        </div>
+        <!-- MIMO -->
+        <div class="row py-5 border-bottom m-auto">
+            <div class="col-md-12">
+                <h3><b>mimo: re-defining an IoT device</b></h3>
+                <p>
+                    This iteration focuses on transforming more complicated numerical data into variations of light. <br>
+                    Based on the time of the day, mimo’s appearance changes, as if it is breathing! <br>
+                    The weather is shown through the color of light or as one might say, mimo’s mood. <br>
+                    mimo recognizes your hand gestures and responds to you accordingly. mimo says hello! <br>
+                </p>
+                <p>
+                    mimo takes the most used function in an IoT device, the weather service, to share information. 
+                    Like milo, mimo looks like a lamp at first glance. 
+                    However, mimo does much more. mimo takes numerical data such as, 
+                    time, weather, and proximity of the user, and communicates with the user.
+                </p>
+                <p><b>Movement</b><br>
+                    The change in time is reflected by the shape of the light. 
+                    This feature gives light a “physical property”, allowing the user to feel like this light 
+                    is real and alive. Dynamic origami patterns enabled a more natural shape shifting and 
+                    I was able to make a sphere. Fishing wire was tied to the top and rolled on a spool on 
+                    the servo motor to create the flattening movement.
+                </p>
+                <p><b>Weather reading</b><br>
+                    Theres more than brightness to light. 
+                    With different hues light has, I wanted the light to speak to the users of today’s mood, 
+                    or weather. Using a wifi module, I pulled in OpenWeatherAPI, an online weather API source. 
+                    Reading the correct values from the data, I extracted keywords listed that described the weather. 
+                    In the arduino, I read them through the serial terminal and separated them by type. 
+                    Then, according to the value read, the color of the LED neopixel ring was set to change. 
+                    This information reading was programmed to occur every 30 minutes.
+                </p>
+                <p><b>Proximity</b><br>
+                    The user and the light interacts buy just the users presence, brightening as the user gets close, 
+                    to elicit a feeling of excitement a companion might feel when they are greeted. 
+                    3 infrared sensors in horizontal placement were used to get proximity data. 
+                    According to which infrared sensor(left, right, or center) was within the threshold first, 
+                    the animations of the light were differently programmed.
+                </p>
+            </div>
+        </div>
+        <!-- REFLECTIONS -->
+        <div class="row py-5 m-auto">
+            <div class="col-md-12">
+                <h5>Reflections</h5>
+                <p><b>Practice makes improvement.</b>
+                    As this was my very first time dealing with real. 
+                    Physical materials and products, there were lots to be learned. 
+                    The most difficult but absolutely rewarding part of this series of projects was 
+                    to get the mechanisms to work. Trying out different materials and mechanisms to fail, 
+                    but also to learn what didn’t work and what I can change was an especially valuable 
+                    experience. Through these endless trial and errors, sleepless nights, and multiple 
+                    trips to Ace’s Hardware, I was able to not only learn the skills of a physical 
+                    prototyper, but also improve on my resilience and proactiveness as a designer.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="pt-5 my-5 text-muted border-top container-sm">
+        Created by Yejun · © 2022
+      </footer>
+</body>
+</html>
